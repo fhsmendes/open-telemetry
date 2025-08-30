@@ -1,0 +1,52 @@
+# Go build artifacts
+/bin/
+/build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Arquivos de debug
+debug
+__debug*
+debug.log
+*.debug
+*.dbg
+*.pdb
+*.prof
+*.trace
+*.pprof
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.cov
+
+# Dependency directories (remove the comment below if you use Go modules)
+/vendor/
+
+# Go workspace file
+go.work
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test binary
+*.test
+
+# Go module cache
+/pkg/mod/
+
+# Go sum files (optional, keep if you want reproducible builds)
+# go.sum

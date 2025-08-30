@@ -1,0 +1,2 @@
+Get http://localhost:8081/temperature?cep=01001000 HTTP/1.1
+Content-Type: application/json
