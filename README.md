@@ -104,21 +104,27 @@ Após a implementação dos serviços, adicione a implementação do OTEL + Zipk
     
     No Zipkin você poderá visualizar os traces distribuídos da aplicação e acompanhar o fluxo das requisições entre os serviços.
 
-    ### Visualizando os logs
+### Visualizando os logs
 
-    6. **Ver logs das aplicações**
-        Para visualizar os logs de ambos os serviços:
-        
-        ```bash
-        # Ver logs de todos os serviços
-        docker-compose logs -f
-        
-        # Ver logs apenas do Serviço A
-        docker-compose logs -f service-input
-        
-        # Ver logs apenas do Serviço B
-        docker-compose logs -f service-orchestration
+6. **Ver logs das aplicações**
 
-        # Ver logs com timestamp
-        docker-compose logs -f --timestamps
-        ```
+    Para visualizar os logs de ambos os serviços:
+
+    ```bash
+    docker-compose logs -f
+    ```
+
+    Ver logs apenas do Serviço A
+    ```bash
+    docker-compose logs -f service-input
+    ```
+
+    Ver logs apenas do Serviço B
+    ```bash
+    docker-compose logs -f service-orchestration
+    ```
+
+    Ver logs com timestamp
+    ```bash
+    docker-compose logs -f --timestamps
+    ```
