@@ -103,3 +103,22 @@ Após a implementação dos serviços, adicione a implementação do OTEL + Zipk
     Abra o navegador e acesse: http://localhost:9411
     
     No Zipkin você poderá visualizar os traces distribuídos da aplicação e acompanhar o fluxo das requisições entre os serviços.
+
+    ### Visualizando os logs
+
+    6. **Ver logs das aplicações**
+        Para visualizar os logs de ambos os serviços:
+        
+        ```bash
+        # Ver logs de todos os serviços
+        docker-compose logs -f
+        
+        # Ver logs apenas do Serviço A
+        docker-compose logs -f service-input
+        
+        # Ver logs apenas do Serviço B
+        docker-compose logs -f service-orchestration
+
+        # Ver logs com timestamp
+        docker-compose logs -f --timestamps
+        ```

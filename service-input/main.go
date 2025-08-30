@@ -128,7 +128,7 @@ func handleCEPRequest(w http.ResponseWriter, r *http.Request) {
 	span.End()
 
 	// Chama o serviço B
-	ctx, spanServiceB := tracer.Start(ctx, "call-service-b")
+	ctx, spanServiceB := tracer.Start(ctx, "call-service-orchestration")
 	defer spanServiceB.End()
 
 	serviceBURL := os.Getenv("SERVICE_B_URL")
