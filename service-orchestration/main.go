@@ -36,7 +36,7 @@ func main() {
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer cancel()
 
-	shutdown, err := initProvider("service-input", os.Getenv("OTEL_EXPORTER_OTLP_ENDPOINT"))
+	shutdown, err := initProvider("service-orchestration", os.Getenv("OTEL_EXPORTER_OTLP_ENDPOINT"))
 	if err != nil {
 		log.Fatalf("failed to initialize tracing provider: %v", err)
 	}
